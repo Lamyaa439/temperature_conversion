@@ -19,14 +19,14 @@ while True:
         break
 
     if from_unit not in 'CFK':
-        print("That is not a valid unit!")
+        print(f"{from_unit} is not a valid unit!")
         continue
 
     temp = float(input("Enter the temperature: "))
     to_unit = input("Enter the unit you want to conversion to (C for Celsius, F for Fahrenheit, and k for Kelvin): ")
 
     if to_unit not in 'CFK':
-        print("That is not a valid unit!")
+        print(f"{to_unit} is not a valid unit!")
         continue
 
     if from_unit == 'C' and to_unit == 'C': # in case the user Enter the same unit
